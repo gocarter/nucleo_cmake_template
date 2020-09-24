@@ -40,7 +40,6 @@ include(cmake/StaticAnalyzers.cmake)
 option(ENABLE_TESTING "Enable Test Builds" ON)
 
 if(NOT CMAKE_CROSSCOMPILING)
-
   if(ENABLE_TESTING)
     enable_testing()
     message("Building Tests. Be sure to check out test/constexpr_tests for constexpr testing")

@@ -10,6 +10,8 @@ target_link_libraries(tests PRIVATE project_warnings project_options catch_main)
 
 # automatically discover tests that are defined in catch based test files you can modify the unittests. TEST_PREFIX to
 # whatever you want, or use different for different binaries
+include(CTest)
+include(Catch)
 catch_discover_tests(
   tests
   TEST_PREFIX
